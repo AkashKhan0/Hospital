@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.moving_text {
+  width: 35%;
+  overflow: hidden;
+}
+.teinkle {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.teinkle p {
+  text-align: center;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  animation: blink 1s steps(2, start) infinite;
+  transition: 1s all ease;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+}
+.marquee-text {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 16px;
+  animation: marquee 30s linear infinite;
+  font-weight: 500;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.social_top {
+  width: 20%;
+  font-size: 18px;
+}
+.social_foot {
+  width: 100%;
+  font-size: 18px;
+}
+.btn1,
+.btn2 {
+  width: 350px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.menu {
+  width: 70%;
+}
+.search {
+  width: 30%;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.menu ul li {
+  padding: 20px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s all;
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+.menu ul li:hover {
+  background-color: #059669;
+}
+.src_box {
+  width: 70%;
+  border: 1px solid #ffffff26;
+  border-radius: 20px;
+  padding: 0px 5px;
+  overflow: hidden;
+}
+input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+  color: #fff;
+}
+.sub_about,
+.sub_news,
+.sub_ser {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  background-color: #1e293b;
+  width: 250px;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transform: 0.5s all;
+}
+.sub_branch {
+  position: absolute;
+  top: 61px;
+  left: -200px;
+  background-color: #1e293b;
+  width: 800px;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transform: 0.5s all;
+  padding: 10px;
+}
+.sub_about p,
+.sub_branch p,
+.sub_news p,
+.sub_ser p {
+  padding: 10px;
+}
+.sub_branch h1 {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px;
+}
+.sub_about p:hover,
+.sub_news p:hover,
+.sub_ser p:hover,
+.sub_ser p:hover,
+.sub_branch p:hover {
+  background-color: #059669;
+}
+.abt:hover .sub_about {
+  transform: scaleY(1);
+}
+.ser:hover .sub_ser {
+  transform: scaleY(1);
+}
+.brnc:hover .sub_branch {
+  transform: scaleY(1);
+}
+.news:hover .sub_news {
+  transform: scaleY(1);
+}
+
+.box {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #059669;
+  padding: 20px;
+  color: #fff;
+  margin-top: -40px;
+  z-index: 99;
+}
+.box_2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #059669;
+  padding: 25px;
+  color: #fff;
+  width: 250px;
+  height: 100px;
+  cursor: pointer;
+}
+.foot_bg {
+  background-image: url("./footer.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+.footer {
+  position: relative;
+  background-color: #1e293bce;
+  color: #fff;
+}
+.foot_box h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.foot_box p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0;
+  cursor: pointer;
+}
+form {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.career_form {
+  background-color: #ffffff0a;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+.inp_box {
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  background-color: #41414116;
+  color: #000;
+}
+.inp_box input,
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+  padding: 10px;
+  color: #1e293b;
+}
+.inp_i {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.form_h1 {
+  text-align: center;
+  background-color: #34d399;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
