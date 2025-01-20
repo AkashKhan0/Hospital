@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = 5000;
 
-console.log("MongoDB URI: ", process.env.MONGODB_URI);
+// console.log("MongoDB URI: ", process.env.MONGODB_URI);
 
 // Middleware
 app.use(cors());
