@@ -65,14 +65,14 @@ const Navbar = () => {
             </div>
             <div className="hotline flex flex-col items-start gap-2">
               <p className="text-emerald-500 flex items-center gap-2 text-lg font-normal">
-                <FaWhatsapp />
+                <FaWhatsapp className="text-2xl" />
                 Hotline (Dhanmondi)
               </p>
               <p className="text-white text-lg font-medium">10636</p>
             </div>
             <div className="work_hour flex flex-col items-start gap-2">
               <p className="text-emerald-500 flex items-center gap-2 text-lg font-normal">
-                <MdOutlineAccessTime />
+                <MdOutlineAccessTime className="text-2xl" />
                 Working Hour
               </p>
               <p className="text-white text-lg font-medium">
@@ -81,7 +81,7 @@ const Navbar = () => {
             </div>
             <div className="email">
               <p className="text-emerald-500 flex items-center gap-2 text-lg font-normal">
-                <MdEmail />
+                <MdEmail className="text-2xl" />
                 Email Us
               </p>
               <p className="text-white text-lg font-medium">
@@ -89,7 +89,10 @@ const Navbar = () => {
               </p>
             </div>
             <div className="portal_btn">
-              <div className="btn1 bg-emerald-600 text-white">
+              <div
+                className="btn1 bg-emerald-600 text-white"
+                onClick={() => navigate("/portal")}
+              >
                 <p>patient portal</p>
                 <p>(download report)</p>
               </div>

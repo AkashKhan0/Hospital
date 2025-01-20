@@ -257,3 +257,13 @@ textarea {
   font-weight: 600;
   color: #fff;
 }
+.inside_dhaka h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #059669;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
