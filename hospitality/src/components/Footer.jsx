@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import pay from "../assets/pay.jpg";
 
 const Footer = () => {
   return (
@@ -37,6 +38,23 @@ const Footer = () => {
               <p>Find Doctors</p>
               <p>Gallery</p>
               <p>Sitemap</p>
+            </div>
+          </div>
+          <div className="flex items-center justify-center flex-wrap">
+            <img src={pay} alt="" />
+          </div>
+          <div className="flex items-center justify-between flex-wrap py-5">
+            <p className="font-thin text-sm">
+              © Copyright 2024. A plus Advertise Ltd.
+            </p>
+            <div className="flex items-center gap-5">
+              <p className="font-thin text-sm cursor-pointer">
+                Terms and Conditions
+              </p>
+              <p className="font-thin text-sm cursor-pointer">Privacy Policy</p>
+              <p className="font-thin text-sm cursor-pointer">
+                Customer Support
+              </p>
             </div>
           </div>
         </div>
